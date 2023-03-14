@@ -1,0 +1,77 @@
+<html>
+  <style>
+    body {
+      background-color: purple;
+      color: white;
+    }
+  </style>
+  <body>
+    <center>
+      <h1>LucasP1ka</h1>
+      <br />
+      <h2>Tributo do lucao a epoca de ouro da hanna monntana</h2>
+      <p>bem vindo ao meu site de hannah montanna</p>
+      <img
+        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_rHsibaJ7P106nGrVJpqwuhF8Z6Oq84GavsCX6cZ9HupGGfHn&imgrefurl=http://google.com/search?tbm=isch&q=Hannah+Montana&h=1440&w=960&tbnid=bYAdeI7cT-OwxM&q=hannah+montana&tbnh=275&tbnw=183&usg=AI4_-kRb_dCEGuHAOHR0P5YqEyKL2i5qOA&vet=1&docid=7lk4UkKP0w5GiM&itg=1&hl=pt-BR&sa=X&ved=2ahUKEwjCn_Gf-9v9AhUFppUCHcIiDcsQ9QF6BAgNEAQ"
+      />
+      <br />
+      <audio id="musica">
+        <source src="./musica.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="musica2">
+        <source src="./musica2.mp3" type="audio/mpeg" />
+      </audio>
+
+      <button id="play1" onclick="playAudio('musica')">TA NA HORA</button>
+      <br />
+      <p>
+        Hannah Montanna foi pra mim um dos principais shows da minha
+        infancia/adolecencia me ensinou muitas coisas como a que a vida de
+        pessoa publica nem sempre pode ser a melhor e ainda sim tem seus
+        <b>defeitos</b> entao nao tente ter duas mas sempre
+        <big>sempre</big> seja voce mesmo e nao se deixe abalar mesmo quando
+        tudo estiver escuro lembre-se nem sempre voce consegue so melhor dos
+        dois mundos, mas as partes ruins dos dois tambem.
+      </p>
+      <h4>Licoes que eu aprendi:</h4>
+    </center>
+    <ol>
+      <li>Amizade acima de tudo</li>
+      <li>
+        Se voce e alguem inflfuente nao fale ou indique produtos duvidosos
+      </li>
+      <li>Nao fique com medo de expressar seus sentimentos</li>
+      <li>De valor as pequenas coisas</li>
+    </ol>
+    <center>
+      <button onclick="playAudio('musica2')">parte 2</button>
+      <h4>E principalmente:</h4>
+      <p>
+        e nao se esqueca de levar seus amigos ao topo e de nao se esquecer de
+        onde voce saiu la sempre vai ser suas razies e sua base
+      </p>
+
+      <img
+        src="http://t0.gstatic.com/images?q=tbn:ANd9GcRMAEGkFXJvgVvwk9NKsVYFtQUWsoggdV6U2xTcD1OzQL_IfBnGfM91Ku83Xw&s"
+      />
+      <br />
+      <button onclick="pauseAudio()">Pausa Pfv</button>
+    </center>
+    <script>
+      var musica1 = document.getElementById("musica");
+      var musica2 = document.getElementById("musica2");
+
+      function playAudio(name) {
+        if (name === "musica") {
+          musica1.play();
+        } else {
+          musica2.play();
+        }
+      }
+      function pauseAudio() {
+        musica1.pause();
+        musica2.pause();
+      }
+    </script>
+  </body>
+</html>
